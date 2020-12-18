@@ -38,7 +38,7 @@ public class Humano extends Personaje {
 	//Crea el premio que despues deja caer
 	private void crearPremio() {
 		Random random = new Random();
-		int randomInt = random.nextInt(6);
+		int randomInt = 5;//random.nextInt(6);
 		this.claveImagen = new String();
 
 		if(randomInt == 0)

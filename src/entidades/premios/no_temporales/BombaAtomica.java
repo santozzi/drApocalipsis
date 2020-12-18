@@ -14,8 +14,7 @@ public class BombaAtomica extends Explosivo {
 
 	@Override
 	public void ejecutar() {
-		ExplosionNuclear en = new ExplosionNuclear(juego);
-		en.actuar();
+		new ExplosionNuclear(juego);
 	}
 
 	@Override
