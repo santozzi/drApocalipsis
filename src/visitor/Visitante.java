@@ -17,6 +17,7 @@ import entidades.premios.temporales.Cuarentena;
 import entidades.premios.temporales.SuperArma;
 import entidades.proyectiles.particulas.ParticulaAlpha;
 import entidades.proyectiles.particulas.ParticulaBeta;
+import entidades.proyectiles.particulas.ParticulaBossAlpha;
 import entidades.proyectiles.proyectil_jugador.ProyectilSanitario;
 import entidades.proyectiles.proyectil_jugador.SuperProyectilSanitario;
 
@@ -78,5 +79,8 @@ public class Visitante extends Visitor{
 
 	@Override
 	public void visitarExplosionNuclear(ExplosionNuclear en) {}
+
+	@Override
+	public void visitarParticulaBossAlpha(ParticulaBossAlpha par) {}
 
 }

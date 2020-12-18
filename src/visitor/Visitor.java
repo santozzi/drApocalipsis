@@ -17,6 +17,7 @@ import entidades.premios.temporales.Cuarentena;
 import entidades.premios.temporales.SuperArma;
 import entidades.proyectiles.particulas.ParticulaAlpha;
 import entidades.proyectiles.particulas.ParticulaBeta;
+import entidades.proyectiles.particulas.ParticulaBossAlpha;
 import entidades.proyectiles.proyectil_jugador.ProyectilSanitario;
 import entidades.proyectiles.proyectil_jugador.SuperProyectilSanitario;
 
@@ -40,6 +41,7 @@ public abstract class Visitor
 	abstract public void visitarProyectilSanitario(ProyectilSanitario p);
 
 	abstract public void visitarParticulaAlpha(ParticulaAlpha par);
+	abstract public void visitarParticulaBossAlpha(ParticulaBossAlpha par);
 	abstract public void visitarParticulaBeta(ParticulaBeta par);
 	abstract public void visitarHumano(Humano hum);
 

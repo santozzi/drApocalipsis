@@ -32,7 +32,7 @@ public abstract class Infectado extends Personaje {
 		this.vector.setModulo(4);
 		this.rango = 150;
 		this.cargaViral = 150;
-		tiempoDeParticula=300;
+		tiempoDeParticula=100;
 		contarTiempoDeParticula=0;
 		tiempoDeAtaque=300;
 		contarTiempoDeAtaque=300;

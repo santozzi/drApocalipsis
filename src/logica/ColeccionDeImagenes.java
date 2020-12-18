@@ -63,6 +63,7 @@ public class ColeccionDeImagenes extends Imagenes{
         // Particulas
 		agregarRuta("ParticulaAlpha", "/img/particula.png", 20, 20);
 		agregarRuta("ParticulaBeta", "/img/particulaBeta.png", 20, 20);
+		agregarRuta("ParticulaBossAlpha", "/img/particulaBeta.png", 20, 20);
         
 		// Premios
 		agregarRuta("Pocion","/img/pocion.png", 50, 50);

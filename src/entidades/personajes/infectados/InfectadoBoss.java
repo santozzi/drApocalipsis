@@ -5,6 +5,7 @@ import java.util.Random;
 import entidades.Entidad;
 import entidades.proyectiles.particulas.ParticulaAlpha;
 import entidades.proyectiles.particulas.ParticulaBeta;
+import entidades.proyectiles.particulas.ParticulaBossAlpha;
 import logica.HiloSecundario;
 import logica.Juego;
 
@@ -34,7 +35,8 @@ abstract public class InfectadoBoss extends Infectado {
 		if(azar==0)
 			this.particula= new ParticulaAlpha(juego,this);
 		else
-			this.particula= new ParticulaBeta(juego,this);
+			this.particula= new ParticulaBossAlpha(juego,this);
+			//this.particula= new ParticulaBeta(juego,this);
 	}
     /**
      * cambioDeDireccion
