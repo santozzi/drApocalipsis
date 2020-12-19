@@ -124,6 +124,7 @@ public class Jugador extends Personaje{
 	}
 	@Override
 	public void impacto(int disparo) {
+		/*
 		if(cargaViral-disparo>0) {
 			this.cargaViral -= disparo;
 
@@ -132,6 +133,7 @@ public class Jugador extends Personaje{
 			desaparecer();
 		}
 		juego.notificarCargaViralDeJugador();
+		*/
 	}
 
 	@Override

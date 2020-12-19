@@ -2,6 +2,7 @@ package entidades.explosiones;
 
 import entidades.Entidad;
 import logica.Juego;
+import reproductor_de_audio.SonidoFX;
 import visitor.VisitanteExplosion;
 import visitor.Visitor;
 
@@ -30,12 +31,14 @@ public class Explosion extends Entidad {
 
 	@Override
 	public void actuar() {
-
+		
 		if(tiempoDeEspera>0) {
 			if(latencia==0) {
+				SonidoFX sonido = juego.getReproductorDeEfectosDeSonido();
 				juego.actualizarEntidad(this);
 				accionar();
-				juego.getReproductorDeEfectosDeSonido().reproducir(this.claveImagen);
+				sonido.parar();
+				sonido.reproducir(this.claveImagen);
 			}
 			latencia++;
 			if(latencia>=tiempoDeEspera)
