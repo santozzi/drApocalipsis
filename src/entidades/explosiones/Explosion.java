@@ -6,10 +6,10 @@ import visitor.VisitanteExplosion;
 import visitor.Visitor;
 
 public class Explosion extends Entidad {
-	
+
 	protected int radio;
 	protected int letalidad;
-	
+
 	public Explosion(Juego j) {
 		super(j);
 		this.radio = 100;
@@ -43,27 +43,30 @@ public class Explosion extends Entidad {
 		}
 
 	}
-	
+
 	public int getLetalidad() {
 		return this.letalidad;
 	}
-	
+
 	@Override
 	public boolean hayColision(Entidad entidad) {
-		
-		int posEntidadActualX = this.vector.getPosicion().x;
-		int posEntidadActualY = this.vector.getPosicion().y;
-		
-		int posEntidadInicioX = entidad.getVector().getPosicion().x - this.radio;
-		int posEntidadInicioY = entidad.getVector().getPosicion().y - this.radio;
-		
-		int posEntidadFinX = entidad.getVector().getPosicion().x + this.radio;
-		int posEntidadFinY = entidad.getVector().getPosicion().y + this.radio;
-		
-		boolean colisionEnX = (posEntidadActualX >= posEntidadInicioX) && (posEntidadActualX <= posEntidadFinX);
-		boolean colisionEnY = (posEntidadActualY >= posEntidadInicioY) && (posEntidadActualY <= posEntidadFinY);
-		
+
+		int posEntidadActualX = this.vector.getPosicion().x + (this.getImagen().getIconWidth()/2);
+		int posEntidadActualY = this.vector.getPosicion().y + (this.getImagen().getIconHeight()/2);
+
+		int posEntidadParamX = entidad.getVector().getPosicion().x + (entidad.getImagen().getIconWidth()/2);
+		int posEntidadParamY = entidad.getVector().getPosicion().y + (entidad.getImagen().getIconHeight()/2);
+
+		int posActualInicioX = posEntidadActualX - this.radio;
+		int posActualInicioY = posEntidadActualY - this.radio;
+
+		int posActualFinX = posEntidadActualX + this.radio;
+		int posActualFinY = posEntidadActualY + this.radio;
+
+		boolean colisionEnX = (posEntidadParamX >= posActualInicioX) && (posEntidadParamX <= posActualFinX);
+		boolean colisionEnY = (posEntidadParamY >= posActualInicioY) && (posEntidadParamY <= posActualFinY);
+
 		return colisionEnX && colisionEnY;
 	}
-	
+
 }

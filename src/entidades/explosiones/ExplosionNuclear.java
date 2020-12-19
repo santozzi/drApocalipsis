@@ -11,6 +11,7 @@ public class ExplosionNuclear extends Explosion {
 		super(j);
 		vector.getPosicion().setLocation(0, 0);
 		this.letalidad = 100;
+		this.tiempoDeEspera = 500;
 		v = new VisitanteExplosionNuclear(this);
 
 	}
