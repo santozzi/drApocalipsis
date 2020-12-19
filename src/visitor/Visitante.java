@@ -14,10 +14,12 @@ import entidades.premios.no_temporales.Diamante;
 import entidades.premios.no_temporales.Moneda;
 import entidades.premios.no_temporales.Pocion;
 import entidades.premios.temporales.Cuarentena;
+import entidades.premios.temporales.LanzaMisiles;
 import entidades.premios.temporales.SuperArma;
 import entidades.proyectiles.particulas.ParticulaAlpha;
 import entidades.proyectiles.particulas.ParticulaBeta;
 import entidades.proyectiles.particulas.ParticulaBossAlpha;
+import entidades.proyectiles.proyectil_jugador.Misil;
 import entidades.proyectiles.proyectil_jugador.ProyectilSanitario;
 import entidades.proyectiles.proyectil_jugador.SuperProyectilSanitario;
 
@@ -82,5 +84,11 @@ public class Visitante extends Visitor{
 
 	@Override
 	public void visitarParticulaBossAlpha(ParticulaBossAlpha par) {}
+
+	@Override
+	public void visitarLanzaMisiles(LanzaMisiles lanzaMisiles) {}
+
+	@Override
+	public void visitarMisil(Misil misil) {}
 
 }

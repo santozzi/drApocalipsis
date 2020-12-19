@@ -11,7 +11,9 @@ import visitor.Visitor;
  *
  */
 public class SuperArma extends Temporal {
+	
 	protected Jugador jugador;
+	
     public SuperArma (Juego juego) {
         super(juego);
     	this.jugador = juego.getJugador();

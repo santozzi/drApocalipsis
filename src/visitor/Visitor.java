@@ -14,10 +14,12 @@ import entidades.premios.no_temporales.Diamante;
 import entidades.premios.no_temporales.Moneda;
 import entidades.premios.no_temporales.Pocion;
 import entidades.premios.temporales.Cuarentena;
+import entidades.premios.temporales.LanzaMisiles;
 import entidades.premios.temporales.SuperArma;
 import entidades.proyectiles.particulas.ParticulaAlpha;
 import entidades.proyectiles.particulas.ParticulaBeta;
 import entidades.proyectiles.particulas.ParticulaBossAlpha;
+import entidades.proyectiles.proyectil_jugador.Misil;
 import entidades.proyectiles.proyectil_jugador.ProyectilSanitario;
 import entidades.proyectiles.proyectil_jugador.SuperProyectilSanitario;
 
@@ -30,6 +32,7 @@ public abstract class Visitor
 {
 
 	abstract public void visitarMoneda(Moneda mon);
+	
 	abstract public void visitarDiamante(Diamante dia);
 
 	abstract public void visitarInfectadoAlpha(InfectadoAlpha ea);
@@ -41,19 +44,34 @@ public abstract class Visitor
 	abstract public void visitarProyectilSanitario(ProyectilSanitario p);
 
 	abstract public void visitarParticulaAlpha(ParticulaAlpha par);
+	
 	abstract public void visitarParticulaBossAlpha(ParticulaBossAlpha par);
+	
 	abstract public void visitarParticulaBeta(ParticulaBeta par);
+	
 	abstract public void visitarHumano(Humano hum);
 
 	abstract public void visitarPocion(Pocion pos);	
 
 	abstract public void visitarCuarentena(Cuarentena cuarentena);
+	
 	abstract public void visitarSuperProyectilSanitario(SuperProyectilSanitario sps);
+	
 	abstract public void visitarSuperArma(SuperArma sarm);
+	
 	abstract public void visitarInfectadoBossAlpha(InfectadoBossAlpha ifboss);	
+	
 	abstract public void visitarInfectadoBossBeta(InfectadoBossBeta ifboss);
+	
 	abstract public void visitarCuadroDeDialogo(CuadroDeDialogo cd);
+	
 	abstract public void visitarBombaAtomica(BombaAtomica ba);
+	
 	abstract public void visitarExplosion(Explosion exp);
+	
 	abstract public void visitarExplosionNuclear(ExplosionNuclear en);
+	
+	abstract public void visitarLanzaMisiles(LanzaMisiles lanzaMisiles);
+	
+	abstract public void visitarMisil(Misil misil);
 }

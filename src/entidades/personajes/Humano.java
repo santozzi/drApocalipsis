@@ -9,6 +9,7 @@ import entidades.premios.no_temporales.Diamante;
 import entidades.premios.no_temporales.Moneda;
 import entidades.premios.no_temporales.Pocion;
 import entidades.premios.temporales.Cuarentena;
+import entidades.premios.temporales.LanzaMisiles;
 import entidades.premios.temporales.SuperArma;
 import logica.ColeccionDeImagenes;
 import logica.HiloSecundario;
@@ -38,7 +39,7 @@ public class Humano extends Personaje {
 	//Crea el premio que despues deja caer
 	private void crearPremio() {
 		Random random = new Random();
-		int randomInt = 5;//random.nextInt(6);
+		int randomInt = random.nextInt(7);
 		this.claveImagen = new String();
 
 		if(randomInt == 0)
@@ -53,6 +54,8 @@ public class Humano extends Personaje {
 			premio = new Cuarentena(juego);
 		else if(randomInt == 5)
 			premio = new BombaAtomica(juego);
+		else if(randomInt == 6)
+			premio = new LanzaMisiles(juego);
 
 		this.claveImagen = this.getClass().getSimpleName()+"_"+premio.getClaveImagen();
 		this.imagen = ColeccionDeImagenes.getColeccionDeImagenes().getImagen(this.claveImagen);

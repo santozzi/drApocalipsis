@@ -2,9 +2,7 @@ package entidades.personajes.infectados;
 
 import java.util.Random;
 
-import entidades.Entidad;
 import entidades.proyectiles.particulas.ParticulaAlpha;
-import entidades.proyectiles.particulas.ParticulaBeta;
 import entidades.proyectiles.particulas.ParticulaBossAlpha;
 import logica.HiloSecundario;
 import logica.Juego;

@@ -12,10 +12,10 @@ public class Explosion extends Entidad {
 	
 	public Explosion(Juego j) {
 		super(j);
-		this.radio = 50;
+		this.radio = 100;
 		this.letalidad = 50;
 		this.latencia = 0;
-		this.tiempoDeEspera = 500;
+		this.tiempoDeEspera = 200;
 		v = new VisitanteExplosion(this);
 		juego.agregarAEntidadesParaAgregar(this);
 	}
@@ -54,14 +54,14 @@ public class Explosion extends Entidad {
 		int posEntidadActualX = this.vector.getPosicion().x;
 		int posEntidadActualY = this.vector.getPosicion().y;
 		
-		int posEntidadParametroX = entidad.getVector().getPosicion().x;
-		int posEntidadParametroY = entidad.getVector().getPosicion().y;
+		int posEntidadInicioX = entidad.getVector().getPosicion().x - this.radio;
+		int posEntidadInicioY = entidad.getVector().getPosicion().y - this.radio;
 		
-		int posEntidadConAnchoX = posEntidadParametroX + entidad.getImagen().getIconWidth() + this.radio;
-		int posEntidadConAltoY = posEntidadParametroY + entidad.getImagen().getIconHeight() + this.radio;
+		int posEntidadFinX = entidad.getVector().getPosicion().x + this.radio;
+		int posEntidadFinY = entidad.getVector().getPosicion().y + this.radio;
 		
-		boolean colisionEnX = (posEntidadActualX<= posEntidadConAnchoX) && (posEntidadActualX >= posEntidadParametroX-10);
-		boolean colisionEnY = (posEntidadActualY+this.getImagen().getIconHeight()>=posEntidadConAltoY);
+		boolean colisionEnX = (posEntidadActualX >= posEntidadInicioX) && (posEntidadActualX <= posEntidadFinX);
+		boolean colisionEnY = (posEntidadActualY >= posEntidadInicioY) && (posEntidadActualY <= posEntidadFinY);
 		
 		return colisionEnX && colisionEnY;
 	}

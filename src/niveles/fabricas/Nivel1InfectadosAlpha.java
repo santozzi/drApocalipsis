@@ -17,8 +17,8 @@ public class Nivel1InfectadosAlpha extends FabricaDeTandas{
 	@Override 
 	public void primeraTanda() {
 		Infectado alpha = new InfectadoAlpha(juego);
-		crearTanda(1, new InfectadoBossAlpha(juego), 9, 1);
-		//crearTanda(cantidadInfectados, alpha, 4, (cantidadInfectados/2)*alpha.getImagen().getIconHeight());
+		//crearTanda(1, new InfectadoBossAlpha(juego), 9, 1);
+		crearTanda(cantidadInfectados, alpha, 4, (cantidadInfectados/2)*alpha.getImagen().getIconHeight());
 	}
 	
 	@Override

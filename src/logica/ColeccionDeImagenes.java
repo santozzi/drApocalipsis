@@ -48,17 +48,20 @@ public class ColeccionDeImagenes extends Imagenes{
 		// Jugador
 		agregarRuta("ArmaSanitaria", "/img/pistola_idle.png", 70, 50);
 		agregarRuta("SuperArmaSanitaria", "/img/superArma.png", 70, 50);
+		agregarRuta("LanzaMisilesSanitario", "/img/LanzaMisiles1.png", 70, 50);
 		agregarRuta("Jugador_CaminarDerecha", "/img/Jugador_caminarDerecha.gif", 70, 60);
 		agregarRuta("Jugador_CaminarIzquierda", "/img/Jugador_caminarIzquierda.gif", 70, 60);
 		agregarRuta("ArmaSanitaria_Disparar", "/img/recargar.gif", 70, 50);
 		agregarRuta("Jugador_Noqueado", "/img/personaje_noqueado.png", 70, 80);
 		agregarRuta("Jugador_Muerto", "/img/personaje_muerto.png", 80, 80);
 		agregarRuta("SuperArmaSanitaria_Disparar", "/img/recargar_sa.gif", 70, 50);
+		agregarRuta("LanzaMisilesSanitario_Disparar", "/img/LanzaMisiles.gif", 70, 50);
 		//----------
 		
         // Proyectiles
 	    agregarRuta("ProyectilSanitario", "/img/Jeringa2.png", 20, 50);
 		agregarRuta("SuperProyectilSanitario", "/img/Super_jeringa.png", 20, 50);
+		agregarRuta("Misil", "/img/misil2.png", 30, 50);
 		
         // Particulas
 		agregarRuta("ParticulaAlpha", "/img/particula.png", 20, 20);
@@ -72,6 +75,7 @@ public class ColeccionDeImagenes extends Imagenes{
 		agregarRuta("Moneda","/img/Moneda.png", 40, 40);
 		agregarRuta("Diamante","/img/Diamante.png", 40, 40);
 		agregarRuta("BombaAtomica","/img/BombaAtomica.png", 40, 40);
+		agregarRuta("LanzaMisiles","/img/LanzaMisiles.png", 40, 30);
 		
 		// Humano
 		agregarRuta("Humano_Cuarentena","/img/Humano_cuarentena.png", 40, 60);
@@ -81,6 +85,7 @@ public class ColeccionDeImagenes extends Imagenes{
 		agregarRuta("Humano_Moneda","/img/Humano_moneda.png", 40, 60);
 		agregarRuta("Humano_Diamante","/img/Humano_diamante.png", 40, 60);
 		agregarRuta("Humano_BombaAtomica","/img/Humano_BombaAtomica.png", 40, 60);
+		agregarRuta("Humano_LanzaMisiles","/img/Humano_LanzaMisiles.png", 40, 60);
 		agregarRuta("Humano", "/img/Humano.png", 40, 60);
 		
 		
@@ -101,7 +106,7 @@ public class ColeccionDeImagenes extends Imagenes{
 		agregarRuta("Silencio","/img/sonido_off.png", 50, 50);
 		
 		// Explosiones
-		agregarRuta("Explosion","/img/Explosion.gif", 70, 100);
+		agregarRuta("Explosion","/img/explosion8.gif", 100, 150);
 		agregarRuta("ExplosionNuclear","/img/ExplosionNuclear.gif", Juego.DECORADO_IZQUIERDO+Juego.ANCHO_DE_COMBATE+Juego.DECORADO_DERECHO, Juego.ALTO_DE_COMBATE);
 		
 		// Otros

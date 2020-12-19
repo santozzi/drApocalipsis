@@ -61,7 +61,6 @@ public class HiloSecundario extends Thread{
 				entidadParaAccionar.actuar();
 			}
 			agregarYQuitarEntidades();
-			
 		}
 	}
 

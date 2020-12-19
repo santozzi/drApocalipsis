@@ -1,7 +1,6 @@
 package niveles.fabricas;
 
 import entidades.personajes.infectados.Infectado;
-import entidades.personajes.infectados.InfectadoAlpha;
 import entidades.personajes.infectados.InfectadoBeta;
 import entidades.personajes.infectados.InfectadoBossBeta;
 import logica.Juego;
@@ -14,8 +13,6 @@ public class Nivel2InfectadosBeta extends FabricaDeTandas {
 		super(j, nivel, 10);
 
 	}
-
-
 
 	@Override
 	public void primeraTanda() {

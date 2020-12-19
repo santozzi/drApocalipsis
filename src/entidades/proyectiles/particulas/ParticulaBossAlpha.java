@@ -4,7 +4,6 @@ import java.util.Random;
 
 import entidades.personajes.infectados.Infectado;
 import logica.Juego;
-import visitor.VisitanteParticulaAlpha;
 import visitor.VisitanteParticulaBossAlpha;
 import visitor.Visitor;
 /**
@@ -23,10 +22,6 @@ public class ParticulaBossAlpha extends Particula{
     	
         direccionX = ran.nextInt(3)-1;
     
-    
-    	
-    	
-    	
     	vector.getDireccion().setLocation(direccionX, direccionY);
     	
     	

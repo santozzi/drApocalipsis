@@ -1,7 +1,6 @@
 package visitor;
 
 import entidades.personajes.jugador.Jugador;
-import entidades.proyectiles.particulas.ParticulaAlpha;
 import entidades.proyectiles.particulas.ParticulaBossAlpha;
 
 public class VisitanteParticulaBossAlpha extends Visitante {
